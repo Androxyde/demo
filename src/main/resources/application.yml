@@ -1,0 +1,24 @@
+micronaut:
+  application:
+    name: demo
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+        descriptions: true
+        step: PT1M
+    enabled: true
+  server:
+    ssl:
+      enabled: 'true'
+datasources:
+  default:
+    driver-class-name: oracle.jdbc.OracleDriver
+    db-type: oracle
+acme:
+  enabled: 'true'
+  tos-agree: 'true'
+netty:
+  default:
+    allocator:
+      max-order: 3
